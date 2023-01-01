@@ -1,0 +1,57 @@
+baseURL: https://www.alexlenkei.com # todo: change site url.
+title: Portfolio # todo: change site name.
+defaultContentLanguage: 'en'
+theme: eternity
+googleAnalytics: '' # todo: set your analytics id.
+
+params:
+  image: /images/landing.jpg
+  subtitle: # todo: change default subtitle for your website.
+  copyright: # todo: set your copyright type.
+  author: # todo: set your full name.
+  dontShowSource: false # please, do not do this :)
+  portfolio:
+    columns:
+      desktop:
+        nature:
+        archive:
+        people:
+        default: 3
+      mobile:
+        default: 1
+        archive:
+        people:
+  socials:
+    # todo: change these links.
+    - icon: 'fab fa-instagram fa-lg'
+      url: 'https://instagram.com/ecrituria'
+  homepage: "/work" # homepage link, mostly same with menu.main[0]
+  specialPages:
+    - work
+    - archive
+  bypassWelcomePage: false # redirects "/" to "homepage" when it's true.
+  plausible: '' # todo: set your plausible id.
+  disableRadius: false
+  moveIt: false  # Moves Title and Meta info down, only visible when scroll.
+  disableAlwaysResize: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  work: ":filename/"
+
+menu:
+  main:
+    - name: work
+      url: /work/
+      weight: 1
+    - name: about
+      url: /about/
+      weight: 2

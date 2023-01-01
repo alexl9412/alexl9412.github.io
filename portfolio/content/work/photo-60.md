@@ -1,0 +1,1 @@
+---images:- /images/photo-60.jpgtags:- work---
