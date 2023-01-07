@@ -1,4 +1,4 @@
-baseURL: https://alexl9412/github.io # todo: change site url.
+baseURL: https://alexl9412.github.io # todo: change site url.
 title: Portfolio # todo: change site name.
 defaultContentLanguage: 'en'
 theme: eternity
